@@ -36,7 +36,7 @@ class LoginSearchTest extends DuskTestCase
         //vul zoeken in
         $this->browse(function (Browser $browser) {
             $browser->within('.searchbar_searchbar__3kRC4', function ($browser) {
-                $browser->type('input[type="text"]', 'LOL EI KIP'); //vul in om error te testen -> LOL EI KIP
+                $browser->type('input[type="text"]', 'Breuken in groningen'); //vul in om error te testen -> LOL EI KIP
                 $browser->click('#search_submit');
             });
         });
